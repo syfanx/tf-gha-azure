@@ -42,7 +42,7 @@
 #       with:
 #         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
-name: 'Terraform'
+name: 'Terraform Destroy '
 
 on:
   workflow_dispatch:
@@ -50,7 +50,7 @@ on:
 
 jobs:
   terraform:
-    name: 'Terraform apply'
+    name: 'Terraform destroy'
     runs-on: ubuntu-latest
     environment: production
 
